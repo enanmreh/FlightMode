@@ -1,0 +1,256 @@
+<style>
+.containerrrr{
+  width: 1020px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  top:180%;
+  padding-right: 100%;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.withborder {
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 1px;
+  border-style: double;
+}
+div {
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h6{
+  font-size: 14.5px;
+}
+.containerr{
+  width: 320px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+.tabContainer{
+  width: 820px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 220%;
+  left: 50%;
+  right: 50%;
+
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+.contain{
+  width: 520px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+
+.containerrr{
+  width: 1020px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  top:100%;
+}
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: white;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: white;
+     cursor: pointer;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+}
+.maintab {
+    overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button: Flights {
+  background-image : url(searchF.jpg);
+  background-repeat: no-repeat;
+}
+.tab button: Hotels {
+  background-image : url(searchHotels.jpeg);
+  background-repeat: no-repeat;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+.maintab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.maintab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.maintab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent{
+
+    background-image : url(searchF.jpg);
+    width:1200px;
+    height:800px;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: none;
+    padding-left: 0px ;
+    border-top: none;
+}
+
+#Hotels{
+
+  background-image : url(Hotels.jpeg);
+  width:1100px;
+  height:645px;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+
+
+}
+/* Style the main tab content */
+.maintabcontent {
+    text-align: center;
+    padding: 6px 12px;
+    border-top: none;
+}
+#rentalinfo .rentalnote {
+  text-align:left;
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+color: black;
+}
+
+#rentalinfo:hover .rentalnote {
+  text-align:left;
+visibility:visible;
+background-color: white;
+color : black;
+}
+
+
+header{
+  background-image: url("airplane-takeoff.jpg");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-color:white;
+}
+body{
+  background-image: url("airplane-takeoff.jpg");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-color:white;
+}
+</style>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log in page </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="ex2.css">
+  </head>
+  <header>
+    <div class="row1">
+      <div class="col-sm-4".col-sm-4> <br><br>
+
+        </div>
+        <div class="col-sm-4".col-sm-4>
+          <a href="http://localhost/main">
+            <p style="text-align:center;" ><img src="flightmode.png" alt="Logo" width=400px height=150px;></p>
+          </a>
+        </div>
+        <div class="col-sm-4".col-sm-4><br><br>
+        </div>
+      </div>
+  </header>
+  <body >
+    <br>
+    <button onclick="document.getElementById('modal-wrapper').style.display='block'" style="position: Center; width:200px; margin-top:200px; margin-left:40%;"> Log in </button>
+    <div id="modal-wrapper" class="modal">
+      <form class="modal-content animate ">
+        <div id="modal-wrapper"  class="containerr" >
+          <h3 style="text-align:center ; font-size:50px ; color:#ffff ;">Log In</h3>
+          Email:
+          <input type="text" placeholder="Enter Username" name="uname">
+          password:
+          <input type="password" placeholder="Enter Password" name="psw">
+         <button>  <a href="MyFirstPage.html"> Log in  </a></button>
+          <input type="checkbox" > Remember me </input>
+          <a href="travellerDetails.html" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+
+        </div>
+      </form>
+    </div>
+    <script>
+    // If user clicks anywhere outside of the modal, Modal will close
+    var modal = document.getElementById('modal-wrapper');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+  <footer >
+    <footer align=left>&copyflightMode LTD.2018
+      <br>
+    develpoed and designed by : Mreh Enan, Jumana Abuhattoom.</footer>
+
+
+   </footer>
+
+</html>
